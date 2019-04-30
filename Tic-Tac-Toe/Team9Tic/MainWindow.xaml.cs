@@ -15,14 +15,18 @@ using System.Windows.Shapes;
 
 namespace Team9Tic
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
+        public Symbol[] Type;
+        public bool Turns;
+        public bool End;
+
         public MainWindow()
         {
+            
             InitializeComponent();
+            
         }
 
         private void BtnStart_Click(object sender, RoutedEventArgs e)
