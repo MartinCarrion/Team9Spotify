@@ -8,6 +8,15 @@
         Title="Team 9" Height="450" Width="800">
     <Grid x:Name="RowsandColumns">
         <Button x:Name="btnStart" Content="Press Here to Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="325" Margin="215,125,0,0" Height="150" Click="BtnStart_Click"/>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
     </Grid>
 </Window>
