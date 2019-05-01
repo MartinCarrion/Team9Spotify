@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace Team9Tic
 {
-    
+
     public partial class MainWindow : Window
     {
         public Symbol[] Type;
@@ -24,20 +24,20 @@ namespace Team9Tic
 
         public MainWindow()
         {
-            
+
             InitializeComponent();
             MessageBox.Show("Game of Tic-Tac-Toe");
             Game();
-            
-            
-            
+
+
+
         }
 
 
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
-            
-            
+
+
 
         }
         public void Game()
@@ -65,7 +65,8 @@ namespace Team9Tic
             {
                 MessageBox.Show("Game has ended");
                 Game();
-                
+                return;
+
 
             }
             var button = (Button)sender;
@@ -90,11 +91,11 @@ namespace Team9Tic
             {
                 button.Foreground = Brushes.Purple;
             }
-           
-            
 
 
-                
+
+
+
 
 
 
@@ -105,37 +106,53 @@ namespace Team9Tic
         }
         public void Check()
         {
-            if (Type[0] != Symbol.NoSpace && (Type[0] & Type[1] & Type[2]) == Type[0])//Top Tow Win
-            {
-                End = true;
-                MessageBox.Show("TOP ROW!");
-                //Image I = new Image();
-                //I.Width = 600;
-                //I.Height = 600;
-                //BitmapImage bi = new BitmapImage();
-                //bi.BeginInit();
-                //bi.UriSource = new Uri(@"https://image.shutterstock.com/image-vector/you-win-glitch-text-anaglyph-450w-732073129.jpg", UriKind.RelativeOrAbsolute);
-                
-                
 
+            if (Type[0] != Symbol.NoSpace && (Type[0] & Type[1] & Type[2]) == Type[0])
+            {
+                MessageBox.Show("Top Row")
+                End = true;
 
 
             }
-            if (Type[0] !=Symbol.NoSpace && (Type[4] & Type[5] & Type [6]) == Type[0])
+
+            if (Type[3] != Symbol.NoSpace && (Type[3] & Type[4] & Type[5]) == Type[3])
             {
                 End = true;
-                MessageBox.Show("Middle ROW!");
 
             }
+
+            if (Type[6] != Symbol.NoSpace && (Type[6] & Type[7] & Type[8]) == Type[6])
+            {
+                End = true;
+
+            }
+
+            if (Type[0] != Symbol.NoSpace && (Type[0] & Type[3] & Type[6]) == Type[0])
+            {
+                End = true;
+
+            }
+
+            if (Type[1] != Symbol.NoSpace && (Type[1] & Type[4] & Type[7]) == Type[1])
+            {
+                End = true;
+
+            }
+            if (Type[2] != Symbol.NoSpace && (Type[2] & Type[5] & Type[8]) == Type[2])
+            {
+                End = true;
+
+            }
+
         }
         private void BtnStart_Click_1(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }
