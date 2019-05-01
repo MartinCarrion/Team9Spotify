@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Tic-Tac-Toe",
+    "\\Tic-Tac-Toe\\Team9Tic"
   ],
+  "SelectedNode": "\\Tic-Tac-Toe\\Team9Tic\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
