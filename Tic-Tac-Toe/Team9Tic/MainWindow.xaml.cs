@@ -78,7 +78,7 @@ namespace Team9Tic
             button.Content = Turns ? "X" : "O";//sets symbols to players
             if (!Turns)
             {
-                button.Foreground = Brushes.Red;
+                button.Foreground = Brushes.Yellow;
             }
             Turns ^= true;//switch players
 
@@ -88,5 +88,6 @@ namespace Team9Tic
         {
             
         }
+
     }
 }
