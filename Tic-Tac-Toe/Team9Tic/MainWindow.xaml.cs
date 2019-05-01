@@ -46,7 +46,7 @@ namespace Team9Tic
         }
         public void Game()
         {
-            MessageBox.Show("X Turn");
+            MessageBox.Show(" (X) Turn ");
             Turns = true;
             for (int i = 0; i < Type.Length; i++)
             {
@@ -85,7 +85,7 @@ namespace Team9Tic
                 Type[both] = Symbol.Cross;
                 button.Content = "X";
                 button.Foreground = Brushes.Purple;
-                MessageBox.Show("O Turn");
+                MessageBox.Show(" (O) Turn ");
 
 
 
@@ -95,7 +95,7 @@ namespace Team9Tic
                 Type[both] = Symbol.Circle;
                 button.Content = "O";
                 button.Foreground = Brushes.Red;
-                MessageBox.Show("X Turn");
+                MessageBox.Show(" (X) Turn ");
                 
 
             }
