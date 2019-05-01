@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Team9Tic
 {
+    
     public enum Symbol
     {
         //This is to establish constants and defined data type
@@ -15,4 +16,6 @@ namespace Team9Tic
         Cross
 
     }
+    
+
 }
