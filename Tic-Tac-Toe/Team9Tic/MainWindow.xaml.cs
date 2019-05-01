@@ -50,7 +50,7 @@ namespace Team9Tic
             {
                 button.Content = "";
                 button.Background = Brushes.Black;
-                button.Foreground = Brushes.Gray;
+                button.Foreground = Brushes.OrangeRed;
 
             });
             End = false;
@@ -79,6 +79,19 @@ namespace Team9Tic
             {
                 button.Foreground = Brushes.Yellow;
             }
+            if (Turns)
+            {
+                button.Foreground = Brushes.Purple;
+            }
+           
+            
+
+
+                
+
+
+
+
             Turns ^= true;//switch players
 
         }
