@@ -63,7 +63,7 @@ namespace Team9Tic
             {
                 MessageBox.Show("Game has ended");
                 Game();
-                return;
+                
 
             }
             var button = (Button)sender;
@@ -76,14 +76,35 @@ namespace Team9Tic
             }
             Type[index] = Turns ? Symbol.Cross : Symbol.Circle;//PLayer 1 and Player 2
             button.Content = Turns ? "X" : "O";//sets symbols to players
+            if (Turns)
+            {
+                button.Foreground = Brushes.Red;
+            }
             if (!Turns)
             {
                 button.Foreground = Brushes.Yellow;
             }
             Turns ^= true;//switch players
+            Check();
 
         }
+        public void Check()
+        {
+            if (Type[0] != Symbol.NoSpace && (Type[0] & Type[1] & Type[2]) == Type[0])//Top Tow Win
+            {
+                End = true;
+                MessageBox.Show("TOP ROW!");
+                Image I = new Image();
+                I.Width = 600;
+                I.Height = 600;
+                BitmapImage bi = new BitmapImage();
+                bi.BeginInit();
+                bi.UriSource = new Uri(@"", UriKind.RelativeOrAbsolute);
 
+
+
+            }
+        }
         private void BtnStart_Click_1(object sender, RoutedEventArgs e)
         {
             
