@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:Team9Tic"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Team 9" Height="600" Width="600"
-        FontSize ="150">
+        Title="Team 9" Height="600" Width="600">
 
     <Window.Resources>
         <Style TargetType="Button">
@@ -22,7 +21,8 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            
+
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -33,7 +33,7 @@
         <Button Click="Button_Click" x:Name="C1R0" Grid.Column="1" Grid.Row="0"/>
         <Button Click="Button_Click" x:Name="C2R0" Grid.Column="2" Grid.Row="0"/>
 
-        <Button Click="Button_Click" x:Name="C0R1" Grid.Column="0" Grid.Row="1"/>
+        <Button Click="Button_Click" x:Name="C0R1" Grid.Column="0" Grid.Row="1" />
         <Button Click="Button_Click" x:Name="C1R1" Grid.Column="1" Grid.Row="1"/>
         <Button Click="Button_Click" x:Name="C2R1" Grid.Column="2" Grid.Row="1"/>
 
@@ -41,8 +41,9 @@
         <Button Click="Button_Click" x:Name="C1R2" Grid.Column="1" Grid.Row="2"/>
         <Button Click="Button_Click" x:Name="C2R2" Grid.Column="2" Grid.Row="2"/>
 
-
     </Grid>
+
+
 
 
 </Window>
