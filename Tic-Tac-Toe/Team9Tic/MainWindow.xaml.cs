@@ -30,7 +30,9 @@ namespace Team9Tic
             Game();
             
             
+            
         }
+
 
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
@@ -107,14 +109,22 @@ namespace Team9Tic
             {
                 End = true;
                 MessageBox.Show("TOP ROW!");
-                Image I = new Image();
-                I.Width = 600;
-                I.Height = 600;
-                BitmapImage bi = new BitmapImage();
-                bi.BeginInit();
-                bi.UriSource = new Uri(@"", UriKind.RelativeOrAbsolute);
+                //Image I = new Image();
+                //I.Width = 600;
+                //I.Height = 600;
+                //BitmapImage bi = new BitmapImage();
+                //bi.BeginInit();
+                //bi.UriSource = new Uri(@"https://image.shutterstock.com/image-vector/you-win-glitch-text-anaglyph-450w-732073129.jpg", UriKind.RelativeOrAbsolute);
+                
+                
 
 
+
+            }
+            if (Type[0] !=Symbol.NoSpace && (Type[4] & Type[5] & Type [6]) == Type[0])
+            {
+                End = true;
+                MessageBox.Show("Middle ROW!");
 
             }
         }
@@ -123,5 +133,9 @@ namespace Team9Tic
             
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
