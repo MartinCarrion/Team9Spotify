@@ -153,10 +153,13 @@ namespace Team9Tic
             }
             if (Type[0] != Symbol.NoSpace && (Type[0] & Type[4] & Type[8]) == Type[0])
             {
+                MessageBox.Show("Diagnol!");
                 End = true;
             }
             if (Type[2] != Symbol.NoSpace && (Type[2] & Type[4] & Type[6]) == Type[2])
             {
+                MessageBox.Show("Diagnol!");
+
                 End = true;
             }
             if (!Type.Any(t=>t==Symbol.NoSpace))
