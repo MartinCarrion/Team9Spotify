@@ -112,7 +112,7 @@ namespace Team9Tic
                 I.Height = 600;
                 BitmapImage bi = new BitmapImage();
                 bi.BeginInit();
-                bi.UriSource = new Uri(@"", UriKind.RelativeOrAbsolute);
+                bi.UriSource = new Uri(@"https://us.123rf.com/450wm/midsummerday/midsummerday1710/midsummerday171000023/87772384-you-win-glitch-text-anaglyph-3d-effect-technological-retro-background-vector-illustration-creative-w.jpg?ver=6", UriKind.RelativeOrAbsolute);
 
 
 
