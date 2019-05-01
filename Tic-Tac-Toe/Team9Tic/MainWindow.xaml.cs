@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Team 9
+//Martin Carrion
+//Tristan Osborn
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -118,46 +122,47 @@ namespace Team9Tic
             var Tie = !Type.Any(t => t == Symbol.NoSpace);
             if (Type[0] != Symbol.NoSpace && (Row0) == Type[0])//Select units in box. zig zag style
             {
-                MessageBox.Show("Top Row");
+                MessageBox.Show("Top Row !");
+               
                 End = true;
             }
 
             else if (Type[3] != Symbol.NoSpace && (Row1) == Type[3])
             {
-                MessageBox.Show("Middle Row");
+                MessageBox.Show("Middle Row !");
                 End = true;
             }
 
             else if (Type[6] != Symbol.NoSpace && (Row2) == Type[6])
             {
-                MessageBox.Show("Last Row");
+                MessageBox.Show("Last Row !");
                 End = true;
             }
 
             else if (Type[0] != Symbol.NoSpace && (Col0) == Type[0])
             {
-                MessageBox.Show("Left Column");
+                MessageBox.Show("Left Column !");
                 End = true;
             }
 
             else if (Type[1] != Symbol.NoSpace && (Col1) == Type[1])
             {
-                MessageBox.Show("Middle Column");
+                MessageBox.Show("Middle Column !");
                 End = true;
             }
             else if (Type[2] != Symbol.NoSpace && (Col2) == Type[2])
             {
-                MessageBox.Show("RIght Column");
+                MessageBox.Show("RIght Column !");
                 End = true;
             }
             else if (Type[0] != Symbol.NoSpace && (Dag1) == Type[0])
             {
-                MessageBox.Show("Diagonal!");
+                MessageBox.Show("Diagonal !");
                 End = true;
             }
             else if (Type[2] != Symbol.NoSpace && (Dag2) == Type[2])
             {
-                MessageBox.Show("Diagonal!");
+                MessageBox.Show("Diagonal !");
 
                 End = true;
             }

@@ -11,7 +11,7 @@
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="Green"/>
-            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderThickness" Value="10" />
             
 
         </Style>
