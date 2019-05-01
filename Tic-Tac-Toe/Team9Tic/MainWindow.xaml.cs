@@ -26,6 +26,7 @@ namespace Team9Tic
         {
             
             InitializeComponent();
+            MessageBox.Show("Game of Tic-Tac-Toe");
             Game();
             
             
