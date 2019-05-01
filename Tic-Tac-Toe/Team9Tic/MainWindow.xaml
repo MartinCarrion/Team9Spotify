@@ -5,39 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Team9Tic"
         mc:Ignorable="d"
-        Title="Team 9" Height="450" Width="800">
-    <Grid x:Name="RowsandColumns" Background="White">
-        <Button x:Name="btnStart" Content="Press Here to Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="325" Margin="155,125,0,0" Height="150" Click="BtnStart_Click" Grid.ColumnSpan="3" Grid.Column="1" Grid.RowSpan="2"/>
+        ResizeMode="NoResize"
+        Title="Team 9" Height="800" Width="800">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="RowsandColumns">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="17*"/>
-            <ColumnDefinition Width="22*"/>
-            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Click="Button_Click" x:Name="C0R0" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
-        <Button Click="Button_Click" x:Name="C1R0" Grid.Column="2" Grid.Row="0"/>
-        <Button Click="Button_Click" x:Name="C2R0" Grid.Column="3" Grid.Row="0"/>
+        <Button Click="Button_Click" x:Name="C0R0" Grid.Column="0" Grid.Row="0"/>
+        <Button Click="Button_Click" x:Name="C1R0" Grid.Column="1" Grid.Row="0"/>
+        <Button Click="Button_Click" x:Name="C2R0" Grid.Column="2" Grid.Row="0"/>
 
-        <Button Click="Button_Click" x:Name="C0R1" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <Button Click="Button_Click" x:Name="C1R1" Grid.Column="2" Grid.Row="1"/>
-        <Button Click="Button_Click" x:Name="C2R1" Grid.Column="3" Grid.Row="1"/>
+        <Button Click="Button_Click" x:Name="C0R1" Grid.Column="0" Grid.Row="1"/>
+        <Button Click="Button_Click" x:Name="C1R1" Grid.Column="1" Grid.Row="1"/>
+        <Button Click="Button_Click" x:Name="C2R1" Grid.Column="2" Grid.Row="1"/>
 
-        <Button Click="Button_Click" x:Name="C0R2" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
-        <Button Click="Button_Click" x:Name="C1R2" Grid.Column="2" Grid.Row="2"/>
-        <Button Click="Button_Click" x:Name="C2R2" Grid.Column="3" Grid.Row="2"/>
+        <Button Click="Button_Click" x:Name="C0R2" Grid.Column="0" Grid.Row="2"/>
+        <Button Click="Button_Click" x:Name="C1R2" Grid.Column="1" Grid.Row="2"/>
+        <Button Click="Button_Click" x:Name="C2R2" Grid.Column="2" Grid.Row="2"/>
+        <Button x:Name="btnStart" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="230" Grid.Column="1" Margin="24,10,0,0" Background="White" Height="95" Grid.Row="1" Click="BtnStart_Click_1" Foreground="White"/>
 
 
     </Grid>
-    <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="Black"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            
-        </Style>
-    </Window.Resources>
+
+
 </Window>

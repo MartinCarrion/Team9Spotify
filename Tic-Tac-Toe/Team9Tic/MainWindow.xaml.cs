@@ -26,14 +26,15 @@ namespace Team9Tic
         {
             
             InitializeComponent();
+            Game();
             
             
         }
 
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
-            btnStart.Visibility = Visibility.Collapsed;
-            Game();
+            
+            
 
         }
         public void Game()
@@ -68,6 +69,23 @@ namespace Team9Tic
             var column = Grid.GetColumn(button);//Helps Place buttons
             var row = Grid.GetRow(button);//Helps Place Buttons
             var index = column + (row * 3);//equation that helps solidify buttons
+            if (Type[index] != Symbol.NoSpace)
+            {
+                return;
+            }
+            Type[index] = Turns ? Symbol.Cross : Symbol.Circle;//PLayer 1 and Player 2
+            button.Content = Turns ? "X" : "O";//sets symbols to players
+            if (!Turns)
+            {
+                button.Foreground = Brushes.Red;
+            }
+            Turns ^= true;//switch players
+
+        }
+
+        private void BtnStart_Click_1(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
