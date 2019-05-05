@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:Team9Tic"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Team 9" Height="600" Width="600" FontSize="100">
+        Title="Team 9" Height="600" Width="600">
 
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="Green"/>
-            <Setter Property="BorderThickness" Value="10" />
+            <Setter Property="BorderThickness" Value="1"/>
             
 
         </Style>
